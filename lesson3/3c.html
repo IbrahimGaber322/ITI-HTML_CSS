@@ -1,55 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Buttons Example</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        margin: 0;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-      .custom-buttons {
-        margin: 10px;
-        padding: 15px 30px;
-        font-size: 16px;
-        text-align: center;
-        text-decoration: none;
-        color: #fff;
-        background-color: rgb(121, 82, 179);
+        .github-button {
+            padding: 10px 20px;
+            font-size: 30px;
+            font-weight: 500;
+            background-color: rgb(46, 164, 79);
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            border-radius: 15px;
+        }
 
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      .custom-buttons:hover {
-        background-color: rgba(121, 82, 179, 0.47);
-      }
+        .github-button:hover {
+            background-color: #0000006b;
+            color: black;
+        }
     </style>
-  </head>
-  <body>
-    <!-- "Get Started" Button -->
-    <a href="#" class="custom-buttons">Get Started</a>
-
-    <!-- "Download" Button -->
-    <a
-      href="#"
-      class="custom-buttons"
-      style="
-        color: rgb(108, 117, 125);
-        border: solid 2px;
-        background-color: white;
-        border-color: rgb(108, 117, 125);
-      "
-      >Download</a
-    >
-  </body>
+</head>
+<body>
+    <button class="github-button" >Sign Up</button>
+</body>
 </html>

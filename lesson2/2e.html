@@ -3,28 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Website Buttons</title>
+
     <style>
-        button{
-            padding: 6px 20px;
-            border-radius: 20px;
-            font-size: 20px;
-            margin: 10px;
-            border: none;
-            transition: opacity 0.3 ease;
+        body {
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
         }
-        button:hover{
+
+        .custom-button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
             cursor: pointer;
-            opacity: 0.8;
+            transition: background-color 0.3s ease;
+        }
+
+        .apply-button {
+            background-color: #0077b5;
+        }
+
+        .save-button {
+            background-color: white;
+            color: #0077b5;
+            border: solid 2px #0077b5;
+        }
+
+        .custom-button:hover {
+            filter: brightness(90%);
+        }
+        .save-button:hover {
+            background-color: #0077b5;
+            color: white;
+            border-color: white;
         }
     </style>
 </head>
 <body>
-    <a style="color: rgb(0, 113, 133);" href="https://www.amazon.eg/">Back to amazon.</a>
-    <p style="font-weight: 900;">Nike Black Running Shoes</p>
-    <p style="color: rgb(0, 118, 0); font-weight: 700;">$39 - in stock.</p>
-    <p>Free delivery tommorow.</p>
-    <button style="background-color: rgb(255, 216, 20);">Add to Cart</button>
-    <button style="background-color: rgb(255, 164, 28);">Buy now</button>
+
+    <!-- "Apply on LinkedIn" Button -->
+    <button class="custom-button apply-button">Apply on company website</button>
+
+    <!-- "Save" Button -->
+    <button class="custom-button save-button">Save</button>
+
 </body>
 </html>

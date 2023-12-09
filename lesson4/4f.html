@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 6px 20px;
+            border-radius: 20px;
+            font-size: 20px;
+            margin: 10px;
+            border: none;
+            transition: opacity 0.3s ease;
+        }
+        button:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <a style="color: rgb(0, 113, 133);" href="https://www.amazon.eg/">Back to Amazon</a>
+    <p style="font-weight: 900;">Nike Black Running Shoes</p>
+    <p style="color: rgb(0, 118, 0); font-weight: 700;">$39 - in stock.</p>
+    <p>Free delivery tomorrow.</p>
+    <button class="button" onclick="button(this)" style="background-color: rgb(255, 216, 20);">Add to Cart</button>
+    <button class="button" onclick="button(this)" style="background-color: rgb(255, 164, 28);">Buy now</button>
+    <script>
+        function button(button) {
+            button.style.opacity = 0.2;
+            setTimeout(function() {
+                button.style.opacity = 1;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Subscribe Button</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .subscribe-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #ff0000; /* Red color */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .subscribe-button:hover {
+      background-color: #cc0000; /* Darker red on hover */
+    }
+    .tweet-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      background-color: #1da1f2; /* Twitter blue color */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .tweet-button:hover {
+      background-color: #0d8ecf; /* Darker blue on hover */
+    }
+    .custom-button {
+      display: inline-block;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      color: #666; /* Grey text color */
+      background-color: #fff; /* White background */
+      border: 2px solid #666; /* Grey border */
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .custom-button:hover {
+      background-color: #f0f0f0; /* Light grey background on hover */
+      color: #333; /* Darker grey text color on hover */
+      border-color: #333; /* Darker grey border on hover */
+    }
+  </style>
+</head>
+<body>
+    <div style="display: flex; width: 100%; padding: 0 30%; justify-content: space-between;">
+        <a href="#" class="subscribe-button">Subscribe</a>
+        <a href="#" class="custom-button">Join</a>
+        <a href="https://twitter.com/intent/tweet" class="tweet-button" target="_blank">Tweet</a>
+    </div>
+ 
+</body>
+</html>
